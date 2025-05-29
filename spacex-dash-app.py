@@ -17,7 +17,7 @@ app = dash.Dash(__name__)
 # Create an app layout
 app.layout = html.Div(children=[
     html.H1('SpaceX Launch Records Dashboard',
-            style={'textAlign': 'center', 'color': '#503D36', 'font-size': 40}),
+            style={'textAlign': 'center', 'color': '#503D36', 'font-size': '40px'}),
 
     dcc.Dropdown(
         id='site-dropdown',
@@ -31,7 +31,7 @@ app.layout = html.Div(children=[
         value='ALL',
         placeholder='Select a Launch Site here',
         searchable=True,
-        style={'fontSize': '18px'}
+        style={'fontSize': '24px'}
     ),
 
     html.Br(),
@@ -40,7 +40,7 @@ app.layout = html.Div(children=[
 
     html.Br(),
 
-    html.P("Payload range (Kg):", style={'fontSize': '18px'}),
+    html.P("Payload range (Kg):", style={'fontSize': '24px'}),
 
     dcc.RangeSlider(
         id='payload-slider',
