@@ -11,8 +11,10 @@ spacex_df = pd.read_csv("spacex_launch_dash.csv")
 max_payload = spacex_df['Payload Mass (kg)'].max()
 min_payload = spacex_df['Payload Mass (kg)'].min()
 
-# Create a dash application
-app = dash.Dash(__name__)
+from flask import Flask
+server = Flask(__name__)
+app = dash.Dash(__name__, server=server, url_base_pathname='/')
+
 
 # Create an app layout
 app.layout = html.Div(children=[
@@ -97,7 +99,3 @@ def get_scatter_plot(entered_site, payload_range):
                          title=f'Correlation Between Payload and Success for site {entered_site}')
     
     return fig
-
-# Run the app
-if __name__ == '__main__':
-    app.run()
