@@ -1,0 +1,16 @@
+*.ipynb
+__pycache__/
+.venv/
+.env
+*.pkl
+*.zip
+*.tar
+*.tar.gz
+*.egg-info/
+*.log
+.DS_Store
+README.md
+SpaceX_Machine*
+jupyter-labs*
+lab_jupyter_*
+labs-jupyter-*
