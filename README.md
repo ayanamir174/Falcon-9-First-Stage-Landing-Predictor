@@ -54,15 +54,17 @@ SpaceX advertises Falcon 9 launches at **$62 million**, significantly cheaper th
 
 ## 📈 Key Results
 
-| Model                | Test Accuracy |
-|---------------------|---------------|
-| Logistic Regression | **83.3%**     |
-| SVM                 | **83.3%**     |
-| KNN                 | **83.3%**     |
-| Decision Tree       | **72.2%**     |
+| Model                | Test Accuracy | F1 Score | Precision | Recall |
+|---------------------|---------------|----------|-----------|--------|
+| Logistic Regression | **83.3%**     | **89%**  | **92%**   | **87%** |
+| SVM                 | **83.3%**     | 89%      | 91%       | 87%    |
+| KNN                 | **83.3%**     | 84%      | 85%       | 83%    |
+| Decision Tree       | 72.2%         | 72%      | 76%       | 69%    |
 
-- Landing success is **positively correlated with lower payload mass** and **certain booster versions**
-- Dashboard enables filtering by launch site and payload range
+- All three models except the Decision Tree performed equally on test accuracy (**83.3%**), but **Logistic Regression** offered the best precision-recall balance.
+- Trained on features such as `Payload Mass`, `Orbit`, `Launch Site`, and `Booster Version`.
+- Dashboard supports filtering by **payload range**, **launch site**, and **outcome** for exploratory analysis.
+
 
 ---
 
@@ -70,9 +72,12 @@ SpaceX advertises Falcon 9 launches at **$62 million**, significantly cheaper th
 
 | File | Description |
 |------|-------------|
-| `spacex_dash_app.py` | Dash app with visualizations |
-| `spacex_launch_dash.csv` | Cleaned dataset |
-| `SpaceX_Machine Learning Prediction_Part_5.ipynb` | Model training & evaluation |
-| `jupyter-labs-eda-sql-coursera_sqllite.ipynb` | EDA & SQL-based transformations |
-| `labs-jupyter-spacex-Data wrangling.ipynb` | Feature engineering |
 | `SpaceX_Landing_Predictor_Slides.pdf` | Slide deck summary |
+| `SpaceX_Machine Learning Prediction_Part_5.ipynb`| Model training & evaluation                |
+| `jupyter-labs-eda-sql-coursera_sqllite.ipynb`    | EDA & SQL-based transformations            |
+| `jupyter-labs-spacex-data-collection-api.ipynb`  | API data collection and extraction logic   |
+| `jupyter-labs-webscraping.ipynb`                 | Web scraping supplemental SpaceX data      |
+| `lab_jupyter_launch_site_location.ipynb`         | Launch site data and location visualization|
+| `labs-jupyter-spacex-Data wrangling.ipynb`       | Data cleaning and transformation           |
+| `spacex_dash_app.py`                             | Dash app with visualizations               |
+| `spacex_launch_dash.csv`                         | Cleaned dataset                            |
