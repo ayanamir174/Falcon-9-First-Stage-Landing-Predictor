@@ -66,13 +66,6 @@ SpaceX advertises Falcon 9 launches at **$62 million**, significantly cheaper th
 
 ---
 
-## 📊 Dashboard Preview
-
-<img src="screenshots/dashboard_all_sites.png" alt="Dashboard Example" width="600"/>
-*(Interactive dashboard included in this repo)*
-
----
-
 ## 📁 Files
 
 | File | Description |
