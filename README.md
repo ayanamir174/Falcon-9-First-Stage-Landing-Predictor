@@ -4,7 +4,11 @@ This project uses machine learning to predict whether the **first stage of a Fal
 
 SpaceX advertises Falcon 9 launches at **$62 million**, significantly cheaper than other providers charging **$165+ million**. Much of the cost advantage comes from **reusing the first stage**. Accurately predicting successful landings can help external companies **evaluate SpaceX’s pricing model** or make informed bids against SpaceX for commercial launches.
 
-🔗 [View Slide Deck (PDF)](link-to-your-pdf)
+---
+
+## 📄 Project Summary
+
+👉 [**View Slide Deck (PDF)**](./Project%20Summary.pdf)
 
 ---
 
@@ -78,4 +82,4 @@ SpaceX advertises Falcon 9 launches at **$62 million**, significantly cheaper th
 | `SpaceX_Machine Learning Prediction_Part_5.ipynb` | Model training & evaluation |
 | `jupyter-labs-eda-sql-coursera_sqllite.ipynb` | EDA & SQL-based transformations |
 | `labs-jupyter-spacex-Data wrangling.ipynb` | Feature engineering |
-| `SpaceX_Landing_Predictor_Slides.pdf` | Project summary slide deck |
+| `SpaceX_Landing_Predictor_Slides.pdf` | Slide deck summary |
