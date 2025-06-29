@@ -72,7 +72,7 @@ SpaceX advertises Falcon 9 launches at **$62 million**, significantly cheaper th
 
 | File | Description |
 |------|-------------|
-| `SpaceX_Landing_Predictor_Slides.pdf` | Slide deck summary |
+| `Project Summary.pdf` | Slide deck summary |
 | `SpaceX_Machine Learning Prediction_Part_5.ipynb`| Model training & evaluation                |
 | `jupyter-labs-eda-sql-coursera_sqllite.ipynb`    | EDA & SQL-based transformations            |
 | `jupyter-labs-spacex-data-collection-api.ipynb`  | API data collection and extraction logic   |
